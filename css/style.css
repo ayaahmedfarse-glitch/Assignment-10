@@ -1,0 +1,313 @@
+
+.w-90 {
+    width: 90%;
+}
+.w-80 {
+    width: 80%;
+}
+.w-83 {
+    width: 83%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-15 {
+    width: 15%;
+}
+.w-8 {
+    width: 8%;
+}
+.w-10 {
+    width: 10%;
+}
+.w-10-px {
+    width: 10px;
+}
+.w-15-px {
+    width: 15px;
+}
+.w-5 {
+    width: 5%;
+}
+.w-25-px{
+    width: 25px;
+}
+.w-35 {
+    width: 35%;
+}
+.w-35-px {
+    width: 35px;
+}
+.w-38 {
+    width: 38%;
+}
+.w-30 {
+    width: 30%;
+}
+.w-30-px {
+    width: 30px;
+}
+.w-20 {
+    width: 20%;
+}
+.w-20-px {
+    width: 20px;
+}
+.w-60 {
+    width:60%;
+}
+.w-65 {
+    width:65%;
+}
+.w-52 {
+    width:52px;
+}
+.w-40 {
+    width:40px;
+}
+.w-60-px {
+    width:60px;
+}
+.w-75-px {
+    width:75px;
+}
+.w-32-px {
+    width:32px;
+}
+.w-155 {
+    width:155px;
+}
+.w-135 {
+    width:135px;
+}
+.w-100-px {
+    width:100px;
+}
+.w-200-px {
+    width:200px;
+}
+.w-250-px {
+    width:250px;
+}
+.w-300 {
+    width:300px;
+}
+.w-350 {
+    width:350px;
+}
+.w-400-px {
+    width:400px;
+}
+.w-492 {
+    width:492px;
+}
+.w-1000-px {
+    width:1000px;
+}
+.h-100-px {
+    height:100px;
+}
+.h-60 {
+    height: 60px;
+}
+.h-70 {
+    height: 70px;
+}
+.h-80 {
+    height: 80px;
+}
+.h-40 {
+    height: 40px;
+}
+.h-8-px {
+    height: 8px;
+}
+.h-30 {
+    height: 30px;
+}
+.h-35 {
+    height: 35px;
+}
+.h-32 {
+    height: 32px;
+}
+.h-52 {
+    height: 52px;
+}
+.h-10 {
+    height: 10%;
+}
+.h-10-px {
+    height: 10px;
+}
+.h-15-px {
+    height: 15px;
+}
+.h-20-px {
+    height: 20px;
+}
+.h-25-px {
+    height: 25px;
+}
+.h-135 {
+    height: 135px;
+}
+.h-155 {
+    height: 155px;
+}
+.h-250 {
+    height: 250px;
+}
+.h-400 {
+    height: 400px;
+}
+.h-300 {
+    height: 300px;
+}
+.h-350 {
+    height: 350px;
+}
+.h-300-px {
+    height: 300px;
+}
+.h-750 {
+    height: 750px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.bs-dark {
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 1);
+}
+.bs-dark-5 {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+.icon-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.fs-h1{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #101828;
+    font-weight: 700;
+}
+.fs-h2{
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    line-height: 54px;
+    color: #101828;
+    font-weight: 700;
+}
+.fs-h3{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height:30px;
+    color: #101828;
+    font-weight: 700;
+}
+
+.fs-p{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4a5565;
+}
+.fs-p-med{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #364153;
+}
+.fs-p-small{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6a7282;
+}
+.fs-p-xs{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.border-light-orange{
+    border: #ffb86a 2px solid;
+}
+.bg-beige{
+    background-color: #fffbd9;
+}
+.text-yellow{
+    color: #fdc700;
+}
+.text-dark-yellow{
+    color: #d08700;
+}
+.text-orange{
+    color: #ff6900;
+}
+.text-dark-orange{
+    color: #f54a00;
+}
+.text-green{
+    color: #008236;
+}
+.text-dark-pink{
+    color: #e60076;
+}
+.bg-gradient-orange-red{
+    background: linear-gradient(135deg, #ff6900 0%, #fb2c36 100%);
+}
+.bg-light-green{
+    background-color: #dcfce7;
+}
+.bg-light-blue{
+    background-color: #dbeafe;
+}
+.bg-light-orange{
+    background-color: #ffedd4;
+}
+.bg-dark-beige{
+    background-color: #fff7ed;
+}
+.bg-light-grey{
+    background-color: #fbf9fa;
+}
+.bg-light-yellow{
+    background-color: #fef9c2;
+}
+.bg-light-pink{
+    background-color: #fce7f3;
+}
+.bg-dark-orange{
+    background-color: #e17100;
+}
+
+.content-prep{
+    width: calc(100% - 60px);
+    height: 124px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.content-rate{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.content-receipe-prep {
+    height: 750px;
+}
+.Ingredients-content,
+.Instructions-content,
+.Nutrition-content,
+.Chef-Tips-content {
+    overflow-y: auto;
+}
+
+
