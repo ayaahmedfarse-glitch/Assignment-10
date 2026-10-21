@@ -1,347 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="ar" class="dark" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>What's For Dinner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="مطور واجهات أمامية متخصص في React و Next.js و TypeScript. أبني تجارب رقمية استثنائية مع التركيز على الأداء وتجربة المستخدم.">
+<meta name="keywords" content="مطور ويب, React, Next.js, TypeScript, تصميم واجهات, مطور أمامي">
+<meta name="author" content="أحمد حسن">
+<meta name="theme-color" content="#6366f1">
+<script>
+(function(){try{var r=document.documentElement,g=function(k){return localStorage.getItem('portfolio-'+k)},t=g('theme');
+if(t==='light'||t==='dark'){r.classList.toggle('dark',t==='dark');r.setAttribute('data-bs-theme',t)}
+var c=JSON.parse(g('color')||'null');if(c){r.style.setProperty('--color-primary',c.p);r.style.setProperty('--color-secondary',c.s);r.style.setProperty('--color-accent',c.a)}
+var f=g('font-family');if(f)r.style.setProperty('--font-main',f)}catch(e){}})();
+</script>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>أحمد حسن | مطور واجهات أمامية</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-  <div class="container">
-    <div class="d-flex">
-      <div class="h-52 w-52 bg-gradient-orange-red rounded-circle icon-center">
-        <i class="fa-solid fa-utensils fa-lg text-white"></i>
-      </div>
-      <div class="ms-3">
-        <h1 class="fs-h1 mb-0">What's For Dinner</h1>
-        <p class="mb-0 fs-p-small">Your daily meal inspiration</p>
-      </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa-solid fa-bookmark fa-lg"></i>
-          </a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left fa-lg"></i></a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-gear fa-lg"></i></a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <img src="Images/Whats For Dinner Avatar.jpg" alt="profile-pic" class="d-block h-40 w-40 rounded-circle border-light-orange shadow">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+<nav id="header" class="navbar navbar-expand-lg fixed-top site-nav" aria-label="التنقل الرئيسي">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2 m-0" href="#hero-section"><span class="logo-box" aria-hidden="true"><i class="fa-solid fa-code"></i></span><span class="text-grad fw-bold fs-4">أحمد حسن</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="فتح القائمة"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav-menu">
+<ul class="navbar-nav nav-links align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="#hero-section">الرئيسية</a></li><li class="nav-item"><a class="nav-link" href="#about">عني</a></li><li class="nav-item"><a class="nav-link" href="#portfolio">الأعمال</a></li><li class="nav-item"><a class="nav-link" href="#experience">الخبرة</a></li><li class="nav-item"><a class="nav-link" href="#testimonials">التوصيات</a></li><li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+<li class="nav-item py-2 py-lg-0"><button id="theme-toggle-button" class="theme-switch" type="button" aria-label="تبديل الوضع الداكن" aria-pressed="true"><span class="knob"><i class="fa-solid fa-sun" aria-hidden="true"></i><i class="fa-solid fa-moon" aria-hidden="true"></i></span></button></li>
+</ul>
+</div>
+</div>
 </nav>
-<main>
- <section class="vh-100 bg-beige overflow-auto">
-  <div class="container my-5 rounded-4">
-  <div class="row ">
-    <div class="col-4">
-      <div class="reciepe-image overflow-hidden w-492 h-750 position-relative p-2 me-5">
-        <img src="Images/Whats For Dinner Photo.avif" alt="meal-1" class="object-fit-cover d-block  h-100 w-100 rounded-4 " id="recipeImage">
-        <div class="d-flex align-items-center justify-content-evenly content-rate bg-white rounded-pill z-1 px-3 py-1">
-         <i class="fa-solid fa-star text-yellow"></i>
-         <span class="fs-p-med px-2" id="recipeRating"></span>
-         <p class="mb-0 fs-p-small" id="recipeReviews"></p>
-        </div>
-        <div class="bg-white z-1 content-prep rounded-4 p-3">
-          <div class="row flex-wrap d-flex justify-content-center align-items-center my-4">
-           <div class="col-3 d-flex flex-column">
-            <i class="fa-solid fa-clock text-orange fa-xl mb-3 mx-auto"></i>
-            <span class="fs-p-small mx-auto">Prep Time</span>
-            <span class="fs-p-med mx-auto" id="prepTime"></span>
-           </div>
-            <div class="col-3 d-flex flex-column">
-            <i class="fa-solid fa-fire-burner text-danger fa-xl mb-3 mx-auto"></i>
-            <span class="fs-p-small mx-auto">Cook Time</span>
-            <span class="fs-p-med mx-auto" id="cookTime"></span>
-           </div>
-            <div class="col-3 d-flex flex-column">
-            <i class="fa-solid fa-users text-primary fa-xl mb-3 mx-auto"></i>
-            <span class="fs-p-small mx-auto">Servings</span>
-            <span class="fs-p-med mx-auto" id="servings"></span>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-8">
-      <div class="content-receipe-prep ms-5 bg-white py-2 px-4">
-        <div class="d-flex gap-2">
-          <span class="fs-p-xs rounded-pill text-green bg-light-green px-3 py-1" id="recipeDifficulty"></span>
-          <span class="fs-p-xs rounded-pill px-3 py-1 text-primary bg-light-blue" id="recipeCategory"></span>
-        </div>
-        <div class="d-flex justify-content-between my-2">
-          <div>
-            <h2 class="fs-h2 fw-bold mb-0" id="recipeTitle"></h2>
-            <p class="fs-p" id="recipeDescription"></p>
-          </div>
-          <div class="icons d-flex gap-2"> 
-            <div class="h-52 w-52 bg-light-orange rounded-4 icon-center">
-              <i class="fa-solid fa-bookmark text-dark-orange text-orange"></i>
-            </div>
-            <div class="h-52 w-52 bg-light-orange rounded-4 icon-center">
-              <i class="fa-solid fa-share-nodes text-dark-orange text-orange"></i>
-            </div>
-          </div>
-        </div>
-        <div>
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-           <li class="nav-item" role="presentation">
-             <button class="nav-link text-dark-orange" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-               <i class="fa-solid fa-list-check text-dark-orange"></i>
-               Ingredients
-             </button>
-           </li>
-           <li class="nav-item" role="presentation">
-             <button class="nav-link text-dark-orange active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-               <i class="fa-solid fa-book-open text-dark-orange"></i>
-               Instructions
-             </button>
-           </li>
-          <li class="nav-item" role="presentation">
-           <button class="nav-link text-dark-orange" id="nutrition-tab" data-bs-toggle="tab" data-bs-target="#nutrition-tab-pane" type="button" role="tab" aria-controls="nutrition-tab-pane" aria-selected="false">
-            <i class="fa-solid fa-chart-pie text-dark-orange"></i>
-             Nutrition
-           </button>
-          </li>
-          <li class="nav-item" role="presentation">
-           <button class="nav-link text-dark-orange" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips-tab-pane" type="button" role="tab" aria-controls="tips-tab-pane" aria-selected="false">
-             <i class="fa-solid fa-lightbulb text-dark-orange"></i>
-             Chef's Tips
-           </button>
-          </li>
- 
-          </ul>
-          <div class="tab-content" id="myTabContent">
-           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-             <div class="Ingredients-content my-4 p-4 bg-dark-beige rounded-4  " id="ingredientsContent">
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                   <i class="fa-solid fa-1 text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                   <i class="fa-solid fa-2 text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                   <i class="fa-solid fa-3 text-white fa-2xs"></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                   <i class="fa-solid fa-4 text-white fa-2xs"></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                    <i class="fa-solid fa-5 text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                    <i class="fa-solid fa-6 text-white fa-2xs"></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                    <i class="fa-solid fa-7 text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center ">
-                  <div class="icon-center h-20-px w-20-px bg-gradient-orange-red rounded-circle">
-                    <i class="fa-solid fa-8 text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-             </div>
-           </div>
-           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-             <div class="Instructions-content my-4 p-4 rounded-4 " id="instructionsContent">
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-52 w-52 bg-gradient-orange-red rounded-4">
-                   <i class="fa-solid fa-1 text-white "></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-52 w-52 bg-gradient-orange-red rounded-4">
-                   <i class="fa-solid fa-2 text-white "></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-52 w-52 bg-gradient-orange-red rounded-4">
-                   <i class="fa-solid fa-3 text-white "></i>
-                 </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-52 w-52 bg-gradient-orange-red rounded-4">
-                   <i class="fa-solid fa-4 text-white "></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-52 w-52 bg-gradient-orange-red rounded-4">
-                    <i class="fa-solid fa-5 text-white "></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-52 w-52 bg-gradient-orange-red rounded-4">
-                    <i class="fa-solid fa-6 text-white "></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-             </div>    
-           </div>
-           <div class="tab-pane fade" id="nutrition-tab-pane" role="tabpanel" aria-labelledby="nutrition-tab" tabindex="0">
-             <div class="Nutrition-content " id="nutritionContent">
-              <div class="row">
-                <div class="col-6">
-                  <div class="d-flex justify-content-between align-items-center bg-light-grey rounded-3 p-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <div class="icon-center h-40 w-40 bg-light-orange rounded-3">
-                        <i class="fa-solid fa-fire text-dark-orange"></i>
-                      </div>
-                      <span class="fs-p-med">Calories</span>
-                    </div>
-                    <span class="fs-h3" id="nutCalories"></span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex justify-content-between align-items-center bg-light-grey rounded-3 p-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <div class="icon-center h-40 w-40 bg-light-blue rounded-3">
-                        <i class="fa-solid fa-dumbbell text-primary"></i>
-                      </div>
-                      <span class="fs-p-med">Protein</span>
-                    </div>
-                    <span class="fs-h3" id="nutProtein"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="d-flex justify-content-between align-items-center bg-light-grey rounded-3 p-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <div class="icon-center h-40 w-40 bg-light-yellow rounded-3">
-                        <i class="fa-solid fa-wheat-alt text-dark-yellow"></i>
-                      </div>
-                      <span class="fs-p-med">Carbohydrates</span>
-                    </div>
-                    <span class="fs-h3" id="nutCarbs"></span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex justify-content-between align-items-center bg-light-grey rounded-3 p-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <div class="icon-center h-40 w-40 bg-danger-subtle rounded-3">
-                        <i class="fa-solid fa-droplet text-danger"></i>
-                      </div>
-                      <span class="fs-p-med">Fat</span>
-                    </div>
-                    <span class="fs-h3" id="nutFat"></span>
-                  </div>
-                </div>
+<main id="main-content">
+<section id="hero-section" class="hero" aria-labelledby="hero-title">
+<div class="hero-bg" aria-hidden="true"></div>
+<div class="container position-relative">
+<div class="row align-items-center g-5">
+<div class="col-lg-6 order-2 order-lg-1 text-center hero-text">
+<div class="pill pill-green mb-4"><span class="ping-dot"></span><span>متاح للشغل الحر</span></div>
+<p class="fs-4 text-muted-c mb-2">مرحباً، أنا 👋</p>
+<h1 id="hero-title" class="display-2 fw-black animated-grad mb-4">أحمد حسن</h1>
+<div class="pill pill-surface mb-4"><span class="mini-icon"><i class="fa-solid fa-code"></i></span><span class="fw-bold">Frontend Developer</span></div>
+<p class="lead text-muted-c hero-lead mb-4">بحول أفكارك لـ <span class="t-primary fw-semibold">تجارب رقمية مميزة</span>. متخصص في بناء مواقع وتطبيقات ويب حديثة بأحدث التقنيات.</p>
+<div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
+<a href="#portfolio" class="btn btn-grad btn-lg d-inline-flex align-items-center gap-2">استكشف أعمالي <i class="fa-solid fa-arrow-left"></i></a>
+<a href="#contact" class="btn btn-outline-theme btn-lg d-inline-flex align-items-center gap-2">تواصل معي <i class="fa-solid fa-paper-plane"></i></a>
+</div>
+<div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2">
+<span class="tech-chip" style="--chip-c:#61DAFB"><i class="fa-brands fa-react fs-5" style="color:#61DAFB" aria-hidden="true"></i>React</span>
+<span class="tech-chip" style="--chip-c:#3178C6"><svg width="20" height="20" viewBox="0 0 24 24" fill="#3178C6" aria-hidden="true"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>TypeScript</span>
+<span class="tech-chip" style="--chip-c:#38BDF8"><svg width="20" height="20" viewBox="0 0 24 24" fill="#38BDF8" aria-hidden="true"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>Tailwind</span>
+<span class="tech-chip" style="--chip-c:var(--text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.572 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"/></svg>Next.js</span>
+</div>
+</div>
+<div class="col-lg-6 order-1 order-lg-2">
+<div class="hero-visual">
+<span class="ring ring-1" aria-hidden="true"></span><span class="ring ring-2" aria-hidden="true"></span>
+<div class="avatar-wrap">
+  <img fetchpriority="high" decoding="async" width="320" height="320" src="Images/Hero Section Image Ahmad Hassan.png" alt="أحمد حسن - مطور واجهات أمامية">
+<span class="float-badge fb-1" aria-hidden="true"><i class="fa-brands fa-react" style="color:#61DAFB"></i></span>
+<span class="float-badge fb-2" aria-hidden="true"><i class="fa-brands fa-vuejs" style="color:#4FC08D"></i></span>
+<span class="float-badge fb-3" aria-hidden="true"><i class="fa-brands fa-figma" style="color:#F24E1E"></i></span>
+<span class="float-badge fb-4" aria-hidden="true"><i class="fa-solid fa-code t-primary"></i></span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="section section-alt" aria-labelledby="about-title">
+<span class="glow gl-tl" aria-hidden="true"></span>
+<div class="container position-relative">
+<div class="section-head tone-1"><small>من أنا</small>
+<h2 id="about-title" class="display-5 fw-black mb-0">عن <span class="text-grad">أحمد حسن</span></h2><div class="title-line"></div></div>
+<div class="row g-5 align-items-start">
+<div class="col-lg-6">
+<div class="position-relative mb-4"><span class="quote-mark" aria-hidden="true">"</span>
+<h3 class="display-6 fw-black mb-4 position-relative">بحب أحول الأفكار <span class="t-primary">لواقع رقمي</span></h3>
+<p class="fs-5 text-muted-c">مطور واجهات أمامية بخبرة +8 سنوات في بناء تطبيقات ويب حديثة وتصميم تجارب مستخدم استثنائية.</p>
+<p class="fs-5 text-muted-c">بشتغل بأحدث التقنيات زي React و Next.js و TypeScript عشان أقدم حلول عالية الجودة وتعدي التوقعات.</p></div>
+<div class="d-flex flex-wrap gap-3 mb-4">
+<span class="chip-soft"><i class="fa-solid fa-graduation-cap t-primary"></i>حاسبات ومعلومات</span>
+<span class="chip-soft"><i class="fa-solid fa-briefcase t-secondary"></i>+50 مشروع</span>
+<span class="chip-soft"><i class="fa-solid fa-users t-accent"></i>+35 عميل سعيد</span></div>
+<div class="surface-card p-4"><h4 class="h5 fw-bold d-flex align-items-center gap-2 mb-3">ما أقدمه <i class="fa-solid fa-rocket t-primary"></i></h4>
+<ul class="list-unstyled m-0 d-grid gap-3 text-muted-c">
+<li class="d-flex align-items-center gap-3 tone-1"><span class="dot"></span>تطوير تطبيقات ويب متكاملة بـ React &amp; Next.js</li>
+<li class="d-flex align-items-center gap-3 tone-2"><span class="dot"></span>تصميم واجهات مستخدم حديثة وجذابة</li>
+<li class="d-flex align-items-center gap-3 tone-3"><span class="dot"></span>تحسين الأداء وسرعة التحميل</li>
+<li class="d-flex align-items-center gap-3"><span class="dot" style="--tone:#10b981"></span>تطوير مواقع متوافقة مع جميع الأجهزة</li></ul></div>
+</div>
+<div class="col-lg-6">
+<div class="code-card mb-4"><div class="code-head"><span class="win-dot" style="--c:#ef4444"></span><span class="win-dot" style="--c:#eab308"></span><span class="win-dot" style="--c:#22c55e"></span><span class="code-title">ahmed.js</span></div>
+<pre class="code-body" dir="ltr"><code><span class="c">// من أنا باختصار</span>
+<span class="k">const</span> <span class="v">ahmed</span> = {
+  <span class="p">name</span>: <span class="s">"أحمد حسن"</span>,
+  <span class="p">title</span>: <span class="s">"Frontend Developer"</span>,
+  <span class="p">experience</span>: <span class="n">8</span> + <span class="s">" years"</span>,
+  <span class="p">location</span>: <span class="s">"Cairo, Egypt 🇪🇬"</span>,
+  <span class="p">skills</span>: [
+    <span class="s">"React"</span>, <span class="s">"Next.js"</span>,
+    <span class="s">"TypeScript"</span>, <span class="s">"Tailwind"</span>
+  ],
+  <span class="p">passion</span>: <span class="s">"Creating pixel-perfect UIs"</span>,
+  <span class="p">available</span>: <span class="v">true</span>,
+  <span class="p">hireable</span>: <span class="v">true</span>
+};
 
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="d-flex justify-content-between align-items-center bg-light-grey rounded-3 p-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <div class="icon-center h-40 w-40 bg-success-subtle rounded-3">
-                        <i class="fa-solid fa-seedling text-success"></i>
-                      </div>
-                      <span class="fs-p-med">Fiber</span>
-                    </div>
-                    <span class="fs-h3" id="nutFiber"></span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex justify-content-between align-items-center bg-light-grey rounded-3 p-3">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <div class="icon-center h-40 w-40 bg-light-pink rounded-3">
-                        <i class="fa-solid fa-cube text-dark-pink"></i>
-                      </div>
-                      <span class="fs-p-med">Sodium</span>
-                    </div>
-                    <span class="fs-h3" id="nutSodium"></span>
-                  </div>
-                </div>
-                
-              </div>
-             </div>
-           </div>
-           <div class="tab-pane fade" id="tips-tab-pane" role="tabpanel" aria-labelledby="tips-tab" tabindex="0">
-             <div class="Chef-Tips-content my-4 p-4 bg-dark-beige rounded-4 " id="tipsContent">
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-20-px w-20-px bg-dark-orange rounded-circle">
-                   <i class="fa-solid fa-check text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                  <div class="icon-center h-20-px w-20-px bg-dark-orange rounded-circle">
-                   <i class="fa-solid fa-check text-white fa-2xs"></i>
-                  </div>
-                  <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-20-px w-20-px bg-dark-orange rounded-circle">
-                   <i class="fa-solid fa-check text-white fa-2xs"></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-               <div class="d-flex gap-3 align-items-center mb-3">
-                 <div class="icon-center h-20-px w-20-px bg-dark-orange rounded-circle">
-                   <i class="fa-solid fa-check text-white fa-2xs"></i>
-                 </div>
-                 <p class="fs-p-med mb-0"></p>
-               </div>
-             </div>
-           </div>
-          </div>
-        </div>
-        <div class="d-grid col-6 me-auto my-4">
-          <button class="btn bg-gradient-orange-red text-white p-4 rounded-4" type="button" id="tryRecipeBtn">
-            <i class="fa-solid fa-arrows-repeat text-white"></i>
-             Try Another Recipe
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
- </section>
+<span class="k">export default</span> <span class="v">ahmed</span>;</code></pre></div>
+<div class="row row-cols-3 g-3 mb-4 text-center">
+<div class="col"><div class="surface-card tone-1 stat-mini"><div class="stat-num">50+</div><div class="text-muted-c small">مشروع</div></div></div>
+<div class="col"><div class="surface-card tone-2 stat-mini"><div class="stat-num">8+</div><div class="text-muted-c small">سنوات</div></div></div>
+<div class="col"><div class="surface-card tone-3 stat-mini"><div class="stat-num">35+</div><div class="text-muted-c small">عميل</div></div></div></div>
+<div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+<a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+<a href="#" class="social-btn" style="--hov:#0A66C2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+<a href="#" class="social-btn" style="--hov:#1DA1F2" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+<a href="#" class="social-btn" style="--hov:#EA4C89" aria-label="Dribbble"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a></div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills-section" class="section" aria-labelledby="skills-title">
+<span class="glow gl-br" style="--tone:var(--color-secondary)" aria-hidden="true"></span>
+<div class="container position-relative">
+<div class="section-head tone-2"><small>ما أتقنه</small>
+<h2 id="skills-title" class="display-5 fw-black mb-0">المهارات و <span class="text-grad">التقنيات</span></h2><div class="title-line"></div></div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4"><div class="surface-card skill-card tone-1 p-4 h-100">
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="h4 fw-bold m-0">React.js</h3><i class="fa-brands fa-react fs-1 t-tone" aria-hidden="true"></i></div>
+<div class="progress mb-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في React.js"><div class="progress-bar" style="width:95%"></div></div>
+<p class="text-muted-c m-0">خبرة متقدمة في بناء تطبيقات React معقدة</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="surface-card skill-card tone-2 p-4 h-100">
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="h4 fw-bold m-0">Next.js</h3><i class="fa-solid fa-n fs-1 t-tone" aria-hidden="true"></i></div>
+<div class="progress mb-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Next.js"><div class="progress-bar" style="width:90%"></div></div>
+<p class="text-muted-c m-0">تطوير تطبيقات SSR وSSG متقدمة</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="surface-card skill-card tone-3 p-4 h-100">
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="h4 fw-bold m-0">TypeScript</h3><i class="fa-solid fa-code fs-1 t-tone" aria-hidden="true"></i></div>
+<div class="progress mb-3" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في TypeScript"><div class="progress-bar" style="width:88%"></div></div>
+<p class="text-muted-c m-0">كتابة كود آمن ومنظم بشكل احترافي</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="surface-card skill-card tone-1 p-4 h-100">
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="h4 fw-bold m-0">Tailwind CSS</h3><i class="fa-solid fa-wind fs-1 t-tone" aria-hidden="true"></i></div>
+<div class="progress mb-3" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Tailwind CSS"><div class="progress-bar" style="width:97%"></div></div>
+<p class="text-muted-c m-0">تصميم واجهات حديثة بسرعة عالية</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="surface-card skill-card tone-2 p-4 h-100">
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="h4 fw-bold m-0">Node.js</h3><i class="fa-brands fa-node-js fs-1 t-tone" aria-hidden="true"></i></div>
+<div class="progress mb-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Node.js"><div class="progress-bar" style="width:85%"></div></div>
+<p class="text-muted-c m-0">بناء APIs وخدمات الخلفية</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="surface-card skill-card tone-3 p-4 h-100">
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="h4 fw-bold m-0">Figma</h3><i class="fa-brands fa-figma fs-1 t-tone" aria-hidden="true"></i></div>
+<div class="progress mb-3" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Figma"><div class="progress-bar" style="width:92%"></div></div>
+<p class="text-muted-c m-0">تصميم واجهات احترافية ونماذج تفاعلية</p></div></div>
+</div>
+<div class="row row-cols-2 row-cols-md-4 g-3 mt-4">
+<div class="col"><div class="surface-card text-center p-4"><i class="fa-brands fa-html5 display-4 mb-2 d-block" style="color:#f97316" aria-hidden="true"></i><p class="m-0 fw-medium text-muted-c">HTML5</p></div></div>
+<div class="col"><div class="surface-card text-center p-4"><i class="fa-brands fa-css3-alt display-4 mb-2 d-block" style="color:#3b82f6" aria-hidden="true"></i><p class="m-0 fw-medium text-muted-c">CSS3</p></div></div>
+<div class="col"><div class="surface-card text-center p-4"><i class="fa-brands fa-js display-4 mb-2 d-block" style="color:#facc15" aria-hidden="true"></i><p class="m-0 fw-medium text-muted-c">JavaScript</p></div></div>
+<div class="col"><div class="surface-card text-center p-4"><i class="fa-brands fa-git-alt display-4 mb-2 d-block" style="color:#ef4444" aria-hidden="true"></i><p class="m-0 fw-medium text-muted-c">Git</p></div></div>
+</div>
+</div>
+</section>
+<section id="portfolio" class="section section-alt" aria-labelledby="portfolio-title">
+<span class="glow gl-tl" aria-hidden="true"></span>
+<div class="container position-relative">
+<div class="section-head tone-1"><small>أعمالي</small>
+<h2 id="portfolio-title" class="display-5 fw-black mb-0">معرض <span class="text-grad">المشاريع</span></h2><div class="title-line"></div></div>
+<div class="d-flex flex-wrap justify-content-center gap-3 mb-5" id="portfolio-filters" role="tablist" aria-label="فلترة المشاريع">
+<button class="btn filter-btn portfolio-filter active" id="tab-all" data-filter="all" role="tab" aria-selected="true" aria-controls="portfolio-grid" type="button">الكل</button>
+<button class="btn filter-btn portfolio-filter" id="tab-web" data-filter="web" role="tab" aria-selected="false" aria-controls="portfolio-grid" type="button">مواقع الويب</button>
+<button class="btn filter-btn portfolio-filter" id="tab-app" data-filter="app" role="tab" aria-selected="false" aria-controls="portfolio-grid" type="button">التطبيقات</button>
+<button class="btn filter-btn portfolio-filter" id="tab-design" data-filter="design" role="tab" aria-selected="false" aria-controls="portfolio-grid" type="button">التصميم</button>
+<button class="btn filter-btn portfolio-filter" id="tab-ecommerce" data-filter="ecommerce" role="tab" aria-selected="false" aria-controls="portfolio-grid" type="button">التجارة الإلكترونية</button>
+</div>
+<div class="row g-4" id="portfolio-grid" role="tabpanel" aria-labelledby="tab-all">
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="web"><article class="surface-card lift tone-1 overflow-hidden h-100">
+<div class="thumb">
+  <img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (2).png" alt="modern e-commerce website design with purple gradient, shopping cart interface, product showcase">
+</div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">موقع ويب</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">متجر إلكتروني متكامل</h3><p class="text-muted-c mb-3">منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">React</span><span class="badge tag">Node.js</span><span class="badge tag">MongoDB</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="app"><article class="surface-card lift tone-2 overflow-hidden h-100">
+<div class="thumb"><img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (1).png" alt="mobile task management app interface with colorful cards, todo list, modern UI design"></div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">تطبيق</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">تطبيق إدارة المهام</h3><p class="text-muted-c mb-3">تطبيق ويب تفاعلي لإدارة المهام مع ميزات التعاون الجماعي</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">Vue.js</span><span class="badge tag">Firebase</span><span class="badge tag">Tailwind</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="design"><article class="surface-card lift tone-3 overflow-hidden h-100">
+<div class="thumb">
+  <img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio.png" alt="modern portfolio website design with minimalist layout, creative typography, pink and purple accents">
+</div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">تصميم</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3><p class="text-muted-c mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">Figma</span><span class="badge tag">UI/UX</span><span class="badge tag">Prototype</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="web"><article class="surface-card lift tone-1 overflow-hidden h-100">
+<div class="thumb">
+  <img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (5).png" alt="corporate business website with professional layout, blue and white color scheme, modern design">
+</div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">موقع ويب</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">موقع شركة استشارية</h3><p class="text-muted-c mb-3">موقع احترافي لشركة استشارات مع نظام حجز المواعيد</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">Next.js</span><span class="badge tag">TypeScript</span><span class="badge tag">Prisma</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="app"><article class="surface-card lift tone-2 overflow-hidden h-100">
+<div class="thumb">
+  <img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (4).png" alt="social media dashboard with analytics charts, user engagement metrics, modern interface design">
+</div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">تطبيق</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">لوحة تحليلات اجتماعية</h3><p class="text-muted-c mb-3">منصة تحليل وإدارة حسابات التواصل الاجتماعي</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">React</span><span class="badge tag">Chart.js</span><span class="badge tag">API</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="ecommerce"><article class="surface-card lift tone-3 overflow-hidden h-100">
+<div class="thumb">
+  <img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (3).png" alt="fashion e-commerce website with luxury product display, elegant design, shopping experience">
+</div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">تجارة</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">متجر أزياء فاخر</h3><p class="text-muted-c mb-3">منصة تسوق راقية للأزياء مع تجربة مستخدم استثنائية</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">Next.js</span><span class="badge tag">Stripe</span><span class="badge tag">Sanity</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="web"><article class="surface-card lift tone-1 overflow-hidden h-100">
+<div class="thumb">
+  <img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (8).png" alt="restaurant website with food menu, online ordering system, appetizing food photography">
+</div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">موقع ويب</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">موقع مطعم وتوصيل</h3><p class="text-muted-c mb-3">منصة طلب طعام مع نظام توصيل وتتبع الطلبات</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">React</span><span class="badge tag">Express</span><span class="badge tag">PostgreSQL</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="app"><article class="surface-card lift tone-2 overflow-hidden h-100">
+<div class="thumb"><img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (7).png" alt="fitness tracking app interface with workout plans, progress charts, health metrics dashboard"></div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">تطبيق</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">تطبيق لياقة بدنية</h3><p class="text-muted-c mb-3">تطبيق متكامل لتتبع التمارين والتغذية والتقدم</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">React Native</span><span class="badge tag">Redux</span><span class="badge tag">Firebase</span></div></div></article></div>
+<div class="col-md-6 col-lg-4 portfolio-item" data-category="design"><article class="surface-card lift tone-3 overflow-hidden h-100">
+<div class="thumb"><img loading="lazy" decoding="async" src="Images/Ahmed Hassan Portfolio (5).png" alt="mobile app ui design mockup with colorful screens, modern interface, user experience showcase"></div>
+<div class="p-4"><div class="d-flex justify-content-between align-items-center mb-3"><span class="badge rounded-pill chip-tone">تصميم</span>
+<div class="d-flex gap-2"><a href="#" class="icon-btn" aria-label="معاينة المشروع"><i class="fa-solid fa-eye" aria-hidden="true"></i></a><a href="#" class="icon-btn" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma" aria-hidden="true"></i></a></div></div>
+<h3 class="h4 fw-bold mb-2">تصميم تطبيق جوال</h3><p class="text-muted-c mb-3">تصميم UI/UX كامل لتطبيق جوال متعدد الوظائف</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">Figma</span><span class="badge tag">Adobe XD</span><span class="badge tag">Sketch</span></div></div></article></div>
+</div>
+<div class="text-center mt-5"><a href="#contact" class="btn btn-grad btn-lg d-inline-flex align-items-center gap-2"><i class="fa-solid fa-rocket"></i>لنبدأ مشروعك القادم</a></div>
+</div>
+</section>
+<section id="experience" class="section" aria-labelledby="experience-title">
+<span class="glow gl-br" style="--tone:var(--color-secondary)" aria-hidden="true"></span>
+<div class="container position-relative">
+<div class="section-head tone-2"><small>مسيرتي المهنية</small>
+<h2 id="experience-title" class="display-5 fw-black mb-0">الخبرة <span class="text-grad">العملية</span></h2><div class="title-line"></div></div>
+<div class="timeline">
+<div class="timeline-item d-md-flex" id="experience-1"><span class="timeline-dot tone-1" aria-hidden="true"></span>
+<div class="tl-col"><div class="surface-card tone-1 p-4">
+<div class="d-flex justify-content-between align-items-center mb-3"><span class="badge chip-tone rounded-3 fs-6">2022 - الآن</span><i class="fa-solid fa-briefcase fs-2 t-tone" aria-hidden="true"></i></div>
+<h3 class="h4 fw-bold mb-1">مطور واجهات أمامية أول</h3><p class="fs-5 t-tone mb-2">شركة التقنية المتقدمة</p><p class="text-muted-c mb-3">قيادة فريق من 5 مطورين في بناء تطبيقات ويب معقدة باستخدام React و Next.js. تحسين أداء التطبيقات بنسبة 40% وتطوير نظام تصميم شامل.</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">React</span><span class="badge tag">Next.js</span><span class="badge tag">TypeScript</span><span class="badge tag">Team Lead</span></div></div></div></div>
+<div class="timeline-item d-md-flex" id="experience-2"><span class="timeline-dot tone-2" aria-hidden="true"></span>
+<div class="tl-col tl-end"><div class="surface-card tone-2 p-4">
+<div class="d-flex justify-content-between align-items-center mb-3"><span class="badge chip-tone rounded-3 fs-6">2020 - 2022</span><i class="fa-solid fa-laptop-code fs-2 t-tone" aria-hidden="true"></i></div>
+<h3 class="h4 fw-bold mb-1">مطور Full Stack</h3><p class="fs-5 t-tone mb-2">استوديو الإبداع الرقمي</p><p class="text-muted-c mb-3">تطوير أكثر من 25 موقع ويب وتطبيق للعملاء. العمل على مشاريع متنوعة من التجارة الإلكترونية إلى المنصات التعليمية باستخدام MERN Stack.</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">MongoDB</span><span class="badge tag">Express</span><span class="badge tag">React</span><span class="badge tag">Node.js</span></div></div></div></div>
+<div class="timeline-item d-md-flex" id="experience-3"><span class="timeline-dot tone-3" aria-hidden="true"></span>
+<div class="tl-col"><div class="surface-card tone-3 p-4">
+<div class="d-flex justify-content-between align-items-center mb-3"><span class="badge chip-tone rounded-3 fs-6">2019 - 2020</span><i class="fa-solid fa-code fs-2 t-tone" aria-hidden="true"></i></div>
+<h3 class="h4 fw-bold mb-1">مطور واجهات أمامية</h3><p class="fs-5 t-tone mb-2">وكالة التسويق الرقمي</p><p class="text-muted-c mb-3">تطوير واجهات مستخدم تفاعلية ومتجاوبة لحملات تسويقية متعددة. التعاون مع فريق التصميم لتحويل النماذج إلى تطبيقات عملية.</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">HTML/CSS</span><span class="badge tag">JavaScript</span><span class="badge tag">jQuery</span><span class="badge tag">Bootstrap</span></div></div></div></div>
+<div class="timeline-item d-md-flex" id="experience-4"><span class="timeline-dot tone-1" aria-hidden="true"></span>
+<div class="tl-col tl-end"><div class="surface-card tone-1 p-4">
+<div class="d-flex justify-content-between align-items-center mb-3"><span class="badge chip-tone rounded-3 fs-6">2018 - 2019</span><i class="fa-solid fa-graduation-cap fs-2 t-tone" aria-hidden="true"></i></div>
+<h3 class="h4 fw-bold mb-1">متدرب تطوير ويب</h3><p class="fs-5 t-tone mb-2">شركة البرمجيات الذكية</p><p class="text-muted-c mb-3">برنامج تدريبي مكثف لمدة عام في تطوير الويب. تعلم أساسيات البرمجة وأفضل الممارسات والعمل على مشاريع حقيقية تحت إشراف مطورين محترفين.</p><div class="d-flex flex-wrap gap-2"><span class="badge tag">Git</span><span class="badge tag">APIs</span><span class="badge tag">Responsive Design</span></div></div></div></div>
+</div>
+<div class="row g-4 mt-4">
+<div class="col-md-4"><div class="surface-card text-center p-4 h-100"><div class="icon-box g1"><i class="fa-solid fa-award" aria-hidden="true"></i></div><h3 class="h4 fw-bold mb-2">شهادات معتمدة</h3><p class="text-muted-c m-0">AWS Certified Developer<br>Google UX Design Professional</p></div></div>
+<div class="col-md-4"><div class="surface-card text-center p-4 h-100"><div class="icon-box g2"><i class="fa-solid fa-users" aria-hidden="true"></i></div><h3 class="h4 fw-bold mb-2">فرق العمل</h3><p class="text-muted-c m-0">خبرة في العمل مع فرق متعددة<br>التخصصات والثقافات</p></div></div>
+<div class="col-md-4"><div class="surface-card text-center p-4 h-100"><div class="icon-box g3"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div><h3 class="h4 fw-bold mb-2">الابتكار</h3><p class="text-muted-c m-0">دائماً أبحث عن طرق جديدة<br>لحل المشاكل التقنية</p></div></div>
+</div>
+</div>
+</section>
+<section id="testimonials" class="section section-alt" aria-labelledby="testimonials-title">
+<span class="glow gl-tl" style="--tone:var(--color-accent)" aria-hidden="true"></span>
+<div class="container position-relative">
+<div class="section-head tone-3"><small>آراء العملاء</small>
+<h2 id="testimonials-title" class="display-5 fw-black mb-0">ماذا يقول <span class="text-grad">العملاء</span></h2><div class="title-line"></div></div>
+<div class="carousel-wrap position-relative mb-4">
+<div class="carousel-viewport"><div id="testimonials-carousel" class="carousel-track" role="group" aria-roledescription="carousel" aria-label="عرض آراء العملاء">
+<div class="testimonial-card carousel-slide" role="group" aria-roledescription="slide" aria-label="1 من 6"><article class="surface-card tone-3 p-4 h-100 d-flex flex-column">
+<div class="d-flex align-items-center gap-3 mb-3"><img src="Images/Ahmad Hassan Avatar.jpg" alt="صورة أحمد السعيد" width="64" height="64" class="avatar-sm"><div><h4 class="h5 fw-bold m-0">أحمد السعيد</h4><p class="text-muted-c m-0">مدير شركة التقنية الحديثة</p></div></div>
+<div class="stars mb-3" role="img" aria-label="تقييم 5 من 5 نجوم"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+<p class="fs-5 text-muted-c m-0 flex-grow-1">"شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل المشاكل اللي واجهتنا. الموقع اللي عمله عدى كل توقعاتنا في التصميم والأداء."</p></article></div>
+<div class="testimonial-card carousel-slide" role="group" aria-roledescription="slide" aria-label="2 من 6"><article class="surface-card tone-1 p-4 h-100 d-flex flex-column">
+<div class="d-flex align-items-center gap-3 mb-3"><img src="Images/Ahmed Hassan Avatar.jpg" alt="صورة سيف أسامة" width="64" height="64" class="avatar-sm"><div><h4 class="h5 fw-bold m-0">سيف أسامة</h4><p class="text-muted-c m-0">ميديا باير</p></div></div>
+<div class="stars mb-3" role="img" aria-label="تقييم 5 من 5 نجوم"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+<p class="fs-5 text-muted-c m-0 flex-grow-1">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p></article></div>
+<div class="testimonial-card carousel-slide" role="group" aria-roledescription="slide" aria-label="3 من 6"><article class="surface-card tone-2 p-4 h-100 d-flex flex-column">
+<div class="d-flex align-items-center gap-3 mb-3"><img src="Images/Ahmed Hassan Avatar (1).jpg" alt="صورة خالد صلاح" width="64" height="64" class="avatar-sm"><div><h4 class="h5 fw-bold m-0">خالد صلاح</h4><p class="text-muted-c m-0">مدير تطوير الأعمال</p></div></div>
+<div class="stars mb-3" role="img" aria-label="تقييم 5 من 5 نجوم"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+<p class="fs-5 text-muted-c m-0 flex-grow-1">"شغل محترفين بجد ومواعيد مظبوطة. التطبيق اللي عمله لنا شغال زي الفل على كل الأجهزة. بننصح بيه جداً لأي مشروع."</p></article></div>
+<div class="testimonial-card carousel-slide" role="group" aria-roledescription="slide" aria-label="4 من 6"><article class="surface-card tone-3 p-4 h-100 d-flex flex-column">
+<div class="d-flex align-items-center gap-3 mb-3"><img src="Images/Ahmed Hassan Avatar.avif" alt="صورة أحمد الرفاعي" width="64" height="64" class="avatar-sm"><div><h4 class="h5 fw-bold m-0">أحمد الرفاعي</h4><p class="text-muted-c m-0">جرافيك ديزاينر</p></div></div>
+<div class="stars mb-3" role="img" aria-label="تقييم 5 من 5 نجوم"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+<p class="fs-5 text-muted-c m-0 flex-grow-1">"تجربة ممتازة من الأول للآخر. أحمد سمع طلباتنا كويس وقدم أفكار برة الصندوق. الموقع الجديد عجب العملاء جداً."</p></article></div>
+<div class="testimonial-card carousel-slide" role="group" aria-roledescription="slide" aria-label="5 من 6"><article class="surface-card tone-1 p-4 h-100 d-flex flex-column">
+<div class="d-flex align-items-center gap-3 mb-3"><img src="Images/Ahmed Hassan Avatar (2).jpg" alt="صورة عمر عادل" width="64" height="64" class="avatar-sm"><div><h4 class="h5 fw-bold m-0">عمر عادل</h4><p class="text-muted-c m-0">مؤسس شركة ناشئة</p></div></div>
+<div class="stars mb-3" role="img" aria-label="تقييم 5 من 5 نجوم"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+<p class="fs-5 text-muted-c m-0 flex-grow-1">"أحمد ساعدنا نحول الفكرة لواقع. الـ MVP اللي عمله كان ممتاز عشان نجذب مستثمرين. شطارة تقنية وإبداع ملوش حل."</p></article></div>
+<div class="testimonial-card carousel-slide" role="group" aria-roledescription="slide" aria-label="6 من 6"><article class="surface-card tone-2 p-4 h-100 d-flex flex-column">
+<div class="d-flex align-items-center gap-3 mb-3"><img src="Images/Ahmed Hassan Avatar (1).avif" alt="صورة كريم ياسر" width="64" height="64" class="avatar-sm"><div><h4 class="h5 fw-bold m-0">كريم ياسر</h4><p class="text-muted-c m-0">دكتور صيدلي</p></div></div>
+<div class="stars mb-3" role="img" aria-label="تقييم 5 من 5 نجوم"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+<p class="fs-5 text-muted-c m-0 flex-grow-1">"الشغل مع أحمد كان مريح ومنظم جداً. دايماً بيبعت تحديثات وبيرد بسرعة على أي تعديل. النتيجة النهائية أحسن من اللي كنا متخيلينه."</p></article></div>
+</div></div>
+<button id="next-testimonial" class="carousel-btn d-none d-md-flex align-items-center justify-content-center" aria-label="التوصية التالية" type="button"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+<button id="prev-testimonial" class="carousel-btn d-none d-md-flex align-items-center justify-content-center" aria-label="التوصية السابقة" type="button"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+</div>
+<div id="testimonial-dots" class="d-flex justify-content-center gap-2 mb-5" aria-label="مؤشرات التوصيات"></div>
+<div class="cta-border"><div class="cta-inner p-4 p-md-5 text-center">
+<h3 class="display-6 fw-bold mb-3">جاهز تبدأ مشروعك؟</h3><p class="fs-4 text-muted-c mb-4">يلا نشتغل سوا عشان نحول أفكارك لواقع مبهر</p>
+<div class="d-flex flex-wrap justify-content-center gap-3"><a href="#contact" class="btn btn-grad btn-lg">تواصل معي الآن</a><a href="#portfolio" class="btn btn-outline-theme btn-lg">شاهد المزيد من الأعمال</a></div></div></div>
+</div>
+</section>
+<section id="statistics-section" class="section" aria-label="إحصائيات">
+<div class="container"><div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+<div class="col"><div class="icon-box icon-box-lg g1"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div><div class="display-5 fw-black text-grad">50+</div><p class="text-muted-c fs-5 m-0">مشروع مكتمل</p></div>
+<div class="col"><div class="icon-box icon-box-lg g2"><i class="fa-solid fa-users" aria-hidden="true"></i></div><div class="display-5 fw-black text-grad">35+</div><p class="text-muted-c fs-5 m-0">عميل سعيد</p></div>
+<div class="col"><div class="icon-box icon-box-lg g3"><i class="fa-solid fa-clock" aria-hidden="true"></i></div><div class="display-5 fw-black text-grad">8+</div><p class="text-muted-c fs-5 m-0">سنوات خبرة</p></div>
+<div class="col"><div class="icon-box icon-box-lg g4"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div><div class="display-5 fw-black text-grad">12+</div><p class="text-muted-c fs-5 m-0">جائزة وتقدير</p></div>
+</div></div>
+</section>
+<section id="contact" class="section section-alt" aria-labelledby="contact-title">
+<span class="glow gl-br" aria-hidden="true"></span>
+<div class="container position-relative">
+<div class="section-head tone-1"><small>تواصل معي</small>
+<h2 id="contact-title" class="display-5 fw-black mb-0">يلا نبدأ <span class="text-grad">مشروعك</span></h2><div class="title-line"></div><p class="fs-4 text-muted-c mt-4 mb-0">عندك فكرة مشروع؟ تعالى نتكلم ونحولها لواقع</p></div>
+<div class="row g-5">
+<div class="col-lg-6 d-grid gap-4 align-content-start">
+<a href="mailto:ahmed@example.com" class="surface-card lift tone-1 contact-card"><span class="contact-icon g1"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><span><span class="d-block fw-bold text-muted-c">البريد الإلكتروني</span><span class="d-block fs-5 fw-bold" dir="ltr">ahmed@example.com</span><span class="d-block small text-muted-c">جاهز للرد خلال 24 ساعة</span></span></a>
+<a href="tel:+201012345678" class="surface-card lift tone-2 contact-card"><span class="contact-icon g2"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span><span class="d-block fw-bold text-muted-c">رقم الهاتف</span><span class="d-block fs-5 fw-bold" dir="ltr">+20 10 1234 5678</span><span class="d-block small text-muted-c">متاح من 9 صباحاً - 5 مساءً</span></span></a>
+<div class="surface-card tone-3 contact-card"><span class="contact-icon g3"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><span><span class="d-block fw-bold text-muted-c">الموقع</span><span class="d-block fs-5 fw-bold">القاهرة، مصر</span><span class="d-block small text-muted-c">متاح للعمل عن بعد</span></span></div>
+<div class="cta-border"><div class="cta-inner p-4"><h3 class="h4 fw-bold text-center mb-3">تابعني على</h3><div class="d-flex justify-content-center flex-wrap gap-3">
+<a href="#" class="social-btn lg" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a><a href="#" class="social-btn lg" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a><a href="#" class="social-btn lg" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a><a href="#" class="social-btn lg" aria-label="Dribbble"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a><a href="#" class="social-btn lg" aria-label="Behance"><i class="fa-brands fa-behance" aria-hidden="true"></i></a></div></div></div>
+</div>
+<div class="col-lg-6"><div class="surface-card p-4 p-md-5">
+<form id="contact-form" class="needs-validation" novalidate aria-label="نموذج التواصل">
+<div class="mb-3"><label for="full-name" class="form-label fs-5">الاسم الكامل</label><input type="text" id="full-name" name="full-name" class="form-control" autocomplete="name" placeholder="أدخل اسمك الكامل" required><div class="invalid-feedback">من فضلك أدخل اسمك.</div></div>
+<div class="mb-3"><label for="email" class="form-label fs-5">البريد الإلكتروني</label><input type="email" id="email" name="email" class="form-control" autocomplete="email" placeholder="example@email.com" dir="ltr" required><div class="invalid-feedback">من فضلك أدخل بريداً إلكترونياً صحيحاً.</div></div>
+<div class="mb-3"><label for="phone" class="form-label fs-5">رقم الهاتف</label><input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel" placeholder="+20 10 XXXX XXXX" dir="ltr"></div>
+<div class="mb-3"><label for="project-type" class="form-label fs-5">نوع المشروع</label><select id="project-type" name="project-type" class="form-select"><option value="" selected>اختر نوع المشروع</option><option>موقع ويب</option><option>تطبيق ويب</option><option>تطبيق جوال</option><option>تصميم UI/UX</option><option>استشارة تقنية</option></select></div>
+<div class="mb-3"><label for="budget" class="form-label fs-5">الميزانية المتوقعة</label><select id="budget" name="budget" class="form-select"><option value="" selected>اختر الميزانية</option><option>أقل من 20,000 جنيه</option><option>20,000 - 50,000 جنيه</option><option>50,000 - 100,000 جنيه</option><option>أكثر من 100,000 جنيه</option></select></div>
+<div class="mb-4"><label for="project-details" class="form-label fs-5">تفاصيل المشروع</label><textarea id="project-details" name="project-details" class="form-control" rows="5" placeholder="احكيلي تفاصيل مشروعك..." required></textarea><div class="invalid-feedback">من فضلك اكتب تفاصيل مشروعك.</div></div>
+<button type="submit" class="btn btn-grad btn-lg w-100 d-inline-flex align-items-center justify-content-center gap-2"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i>ابعت الرسالة</button>
+<div id="form-success" class="alert alert-success d-none mt-3 mb-0" role="status">تم إرسال رسالتك، شكراً لتواصلك.</div>
+</form></div></div>
+</div>
+</div>
+</section>
+<footer id="footer" class="site-footer">
+<div class="container">
+<div class="row g-5 mb-5">
+<div class="col-lg-6">
+<div class="d-flex align-items-center gap-2 mb-4"><span class="logo-box" aria-hidden="true"><i class="fa-solid fa-code"></i></span><span class="text-grad fw-bold fs-4">أحمد حسن</span></div>
+<p class="fs-5 text-muted-c mb-4">أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم سلسة بتسيب أثر. بدمج التصميم الجمالي مع الأداء القوي عشان أقدم منتج نهائي متكامل.</p>
+<a href="#" class="surface-card lift cv-btn tone-1 mb-4"><span class="cv-icon"><i class="fa-solid fa-file-arrow-down fs-4" aria-hidden="true"></i></span><span><span class="d-block small text-muted-c">تعرف على خبراتي</span><span class="d-block fw-bold fs-5">حمل السيرة الذاتية (CV)</span></span></a>
+<div class="d-flex align-items-center gap-3"><span class="ping-dot" aria-hidden="true"></span><p class="small text-muted-c m-0">أعمل حالياً على: <span class="fw-bold">مشروع SaaS لإدارة الفريق</span></p></div>
+</div>
+<div class="col-6 col-lg-3"><h3 class="h5 fw-bold mb-4">روابط سريعة</h3><ul class="list-unstyled d-grid gap-2 m-0"><li><a href="#hero-section" class="footer-link">الرئيسية</a></li><li><a href="#about" class="footer-link">عني</a></li><li><a href="#portfolio" class="footer-link">الأعمال</a></li><li><a href="#experience" class="footer-link">الخبرة</a></li><li><a href="#testimonials" class="footer-link">التوصيات</a></li><li><a href="#contact" class="footer-link">تواصل</a></li></ul></div>
+<div class="col-6 col-lg-3"><h3 class="h5 fw-bold mb-4">الخدمات</h3><ul class="list-unstyled d-grid gap-2 m-0"><li><a href="#" class="footer-link">تطوير الويب</a></li><li><a href="#" class="footer-link">تطوير التطبيقات</a></li><li><a href="#" class="footer-link">تصميم UI/UX</a></li><li><a href="#" class="footer-link">الاستشارات التقنية</a></li><li><a href="#" class="footer-link">تحسين الأداء</a></li><li><a href="#" class="footer-link">الصيانة والدعم</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p class="text-muted-c fs-6 m-0">&copy; 2026 أحمد حسن. جميع الحقوق محفوظة.</p></div>
+</div>
+</footer>
 </main>
+<button id="scroll-to-top" class="scroll-top" aria-label="العودة للأعلى" type="button"><i class="fa-solid fa-rocket" aria-hidden="true"></i></button>
+<button id="settings-toggle" class="settings-toggle" aria-label="تخصيص المظهر" aria-expanded="false" aria-controls="settings-sidebar" type="button"><i class="fa-solid fa-gear fs-5" aria-hidden="true"></i></button>
+<div id="settings-overlay" class="settings-overlay"></div>
+<aside id="settings-sidebar" class="settings-sidebar" role="dialog" aria-label="لوحة تخصيص المظهر" inert>
+<div class="settings-head"><h3 class="h5 fw-bold m-0 d-flex align-items-center gap-2"><i class="fa-solid fa-sliders t-primary" aria-hidden="true"></i>تخصيص المظهر</h3><button id="close-settings" class="icon-btn border-0" aria-label="إغلاق لوحة التخصيص" type="button"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+<div class="settings-body">
+<h4 class="settings-label"><i class="fa-solid fa-font" aria-hidden="true"></i>نوع الخط</h4>
+<div class="d-grid gap-3 mb-4" role="radiogroup" aria-label="اختيار نوع الخط">
+<button class="font-option" data-font="alexandria" role="radio" aria-checked="false" type="button"><span class="d-block fs-5 fw-bold" style="font-family:'Alexandria',sans-serif">Alexandria</span><span class="small text-muted-c">Alexandria</span><span class="check"><i class="fa-solid fa-circle-check fs-5" aria-hidden="true"></i></span></button>
+<button class="font-option active" data-font="tajawal" role="radio" aria-checked="true" type="button"><span class="d-block fs-5 fw-bold" style="font-family:'Tajawal',sans-serif">Tajawal</span><span class="small text-muted-c">الخط الافتراضي</span><span class="check"><i class="fa-solid fa-circle-check fs-5" aria-hidden="true"></i></span></button>
+<button class="font-option" data-font="cairo" role="radio" aria-checked="false" type="button"><span class="d-block fs-5 fw-bold" style="font-family:'Cairo',sans-serif">Cairo</span><span class="small text-muted-c">Cairo</span><span class="check"><i class="fa-solid fa-circle-check fs-5" aria-hidden="true"></i></span></button>
+</div>
+<hr class="settings-hr">
+<h4 class="settings-label"><i class="fa-solid fa-palette" aria-hidden="true"></i>لون الثيم</h4>
+<div class="row row-cols-4 g-2" id="theme-colors-grid" aria-label="اختيار لون الثيم"></div>
+</div>
+<div class="settings-foot"><button id="reset-settings" class="btn btn-reset w-100 d-inline-flex align-items-center justify-content-center gap-2" type="button"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i>إعادة الضبط</button></div>
+</aside>
 <script src="JS/bootstrap.bundle.min.js"></script>
 <script src="JS/main.js"></script>
 </body>
